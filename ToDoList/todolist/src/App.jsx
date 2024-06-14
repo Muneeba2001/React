@@ -64,7 +64,7 @@ function App() {
       <NavBar />
       <div className="mx-3 md:container md:mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[80vh] md:w-[35%]">
         <h1 className="text-center font-bold text-lg">
-          itask! MAnage your todos here!
+          itask! Manage your todos here!
         </h1>
         <div className="addtodo my-5 flex flex-col gap-4">
           <h2>Add ToDos</h2>
@@ -82,15 +82,15 @@ function App() {
           </button>
         </div>
         <h2 className="text-xl font-bold ">ToDoes</h2>
-        <div className="flex text-center justify-between align-middle items-center min-w-max">
+        <div className="">
           <div className="todo">
             {todos.length === 0 && (
               <div className="flex m-5">No todos to display</div>
             )}
             {todos.map((item) => {
               return (
-                <div key={item.id} className="flex my-6 gap-48 w-96">
-                  <div className="flex w-full">
+                <div key={item.id} className="flex my-6 justify-between">
+                  <div className="flex ">
                     <input
                       type="checkbox"
                       name={item.id}
